@@ -1,0 +1,38 @@
+#include <iostream>
+
+struct A {
+	int a{1};
+};
+
+struct B {
+	void funcb() {
+		std::cout << b << std::endl;
+	}
+	int b{2};
+};
+
+struct C : public A, public B {
+	int c{3};
+};
+
+void TestDerive()
+{
+	C c;
+	A* a = &c;
+	B* b = &c;
+	void* v = &c;
+	B* b1 = reinterpret_cast<B*>(v);
+	std::cout << "&c:" << &c << std::endl;
+	std::cout << "&a:" << a << std::endl;
+	std::cout << "&b:" << b << std::endl;
+	std::cout << "&v:" << v << std::endl;
+	std::cout << "&b1:" << b1 << std::endl;
+	b1->funcb();
+}
+
+&c:000000B4C76FF958
+&a:000000B4C76FF958
+&b:000000B4C76FF95C   // 位移到B
+&v:000000B4C76FF958   
+&b1:000000B4C76FF958   // void转换成B位移
+1 // bug
