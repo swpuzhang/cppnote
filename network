@@ -1,1 +1,1 @@
-
+SIGPIPE产生原因: 对方关闭socket后, 第一次write, 对方会回RST, 第二次write会产生SIGPIPE, 默认处理时关闭进程, 可以用信号处理屏蔽
