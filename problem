@@ -1,3 +1,4 @@
 1. 溢出
 2. -o2 delete-null-pointer-checks
 3. 死循环
+unordered_map<const char*, int>, 当const char*作为key时, 并不会按按照字符串查找, 而是指针的值
