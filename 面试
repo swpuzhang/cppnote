@@ -95,3 +95,27 @@ linux 内存管理， 页面置换算法
 设计模式 工厂模式什么情况下使用
 
 使用过什么开源库 有研究过什么开源库， 或者自己看过什么书
+
+
+
+
+c++ go rust c# js ts
+c++ 模板 c++11-20
+汇编
+数据结构 算法 leetcode
+操作系统
+linux 命令, io, cpu等命令
+tcp/ip 网络编程 http
+linux系统编程
+多线程, memory order 同步 线程池 协程 then whenall  promise-cpp
+vim基本操作
+make cmake
+c++ 性能优化
+c++ 开源库 libevent asio redis drogon leveldb http 雅兰亭
+测试框架 gtest catch
+日志库 spdlog
+json 
+映射
+http curl
+rpc
+内存池
