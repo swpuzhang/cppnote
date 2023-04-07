@@ -3,3 +3,4 @@
 3. 死循环
 unordered_map<const char*, int>, 当const char*作为key时, 并不会按按照字符串查找, 而是指针的值
 qfile readAll超过1G, 不能读取文件
+fopen打开目录后, linux不报错, 而且用feof()永远为false
