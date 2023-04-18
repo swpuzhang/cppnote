@@ -5,3 +5,4 @@ unordered_map<const char*, int>, 当const char*作为key时, 并不会按按照�
 qfile readAll超过1G, 不能读取文件
 fopen打开目录后, linux不报错, 而且用feof()永远为false
 结构体填充字节后, 这些字节的值不确定, 切记序列化和反序列化整个结构体填充的字节要自己置为0
+读文件, 即使每次只读1024字节, 但是会使用系统buff, 导致free的内存减少
